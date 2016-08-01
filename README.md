@@ -33,6 +33,7 @@ In this case we make a following process flow :
 Command -> Execute ->Register Proxy and Mediator-> Proxy send notification -> Mediator receive notification
 
 ####Sample command
+```cs
 public class StartUpCommand : PureMVC.Patterns.SimpleCommand {
 	public override void Execute(PureMVC.Interfaces.INotification notification)
 	{
@@ -51,6 +52,7 @@ public class StartUpCommand : PureMVC.Patterns.SimpleCommand {
 
 	}
 }
+```
 
 ####Sample proxy
 public class SampleProxy : Proxy,IFWProxy{
