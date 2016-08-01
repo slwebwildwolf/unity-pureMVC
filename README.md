@@ -76,9 +76,6 @@ public class SampleProxy : Proxy,IFWProxy{
 
 	}
 
-	/// <summary>
-	/// Raises the remove event.
-	/// </summary>
 	public override void OnRemove ()
 	{
 		Debug.Log ("SampleProxy OnRemove");
