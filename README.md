@@ -55,6 +55,7 @@ public class StartUpCommand : PureMVC.Patterns.SimpleCommand {
 ```
 
 ####Sample proxy
+'''cs
 public class SampleProxy : Proxy,IFWProxy{
 
 	public static string NAME="sampleProxy";
@@ -89,8 +90,10 @@ public class SampleProxy : Proxy,IFWProxy{
 		SendNotification (Notification.SMAPLE_NOTIFICATION,1);
 	}
 }
+'''
 
 ####Sample mediator
+```cs
 public class SampleMediator :  Mediator, IFWMediator{
 	public static string NAME="smapleMediator";
 	private IList<string> notificationList=new List<string>();
@@ -130,3 +133,4 @@ public class SampleMediator :  Mediator, IFWMediator{
 		Debug.Log (MediatorName+ " OnRemove.");
 	}
 }
+```
